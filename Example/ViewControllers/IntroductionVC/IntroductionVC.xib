@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroductionVC" customModule="Example" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzQ-A9-Iqo">
+                    <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_app" translatesAutoresizingMaskIntoConstraints="NO" id="FT9-ac-9zr">
+                            <rect key="frame" x="107" y="30" width="200" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="Zq4-uj-zQM"/>
+                                <constraint firstAttribute="height" constant="150" id="xLx-tG-Vqg"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTRODUCTION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLX-yF-T9e">
+                            <rect key="frame" x="93.5" y="210" width="227" height="36"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iyv-tq-kki">
+                            <rect key="frame" x="20" y="276" width="374" height="250"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="250" id="MDa-HW-4kb"/>
+                            </constraints>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="iyv-tq-kki" secondAttribute="trailing" constant="20" id="4Tt-F0-APU"/>
+                        <constraint firstItem="PLX-yF-T9e" firstAttribute="top" secondItem="FT9-ac-9zr" secondAttribute="bottom" constant="30" id="6ex-sT-4bW"/>
+                        <constraint firstItem="iyv-tq-kki" firstAttribute="top" secondItem="PLX-yF-T9e" secondAttribute="bottom" constant="30" id="9hj-tM-oGx"/>
+                        <constraint firstItem="PLX-yF-T9e" firstAttribute="centerX" secondItem="BzQ-A9-Iqo" secondAttribute="centerX" id="AFu-vq-3je"/>
+                        <constraint firstItem="FT9-ac-9zr" firstAttribute="centerX" secondItem="BzQ-A9-Iqo" secondAttribute="centerX" id="BHb-V5-GwQ"/>
+                        <constraint firstItem="FT9-ac-9zr" firstAttribute="top" secondItem="BzQ-A9-Iqo" secondAttribute="top" constant="30" id="C3A-S3-fK7"/>
+                        <constraint firstItem="iyv-tq-kki" firstAttribute="leading" secondItem="BzQ-A9-Iqo" secondAttribute="leading" constant="20" id="GZw-cK-g8j"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BzQ-A9-Iqo" secondAttribute="bottom" id="9ac-LJ-VFf"/>
+                <constraint firstItem="BzQ-A9-Iqo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JLt-oO-bDl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BzQ-A9-Iqo" secondAttribute="trailing" id="gDy-7Q-u2I"/>
+                <constraint firstItem="BzQ-A9-Iqo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xJV-Ur-H5K"/>
+            </constraints>
+            <point key="canvasLocation" x="5.7971014492753632" y="-11.383928571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_app" width="512" height="512"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
