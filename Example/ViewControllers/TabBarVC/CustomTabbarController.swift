@@ -9,7 +9,7 @@ import UIKit
 
 class CustomTabbarController: UITabBarController {
     var customTabBar: CustomTabBar!
-    var tabBarHeight: CGFloat = 60
+    var tabBarHeight: CGFloat = 80
    
     override func viewDidLoad() {
         super.viewDidLoad()

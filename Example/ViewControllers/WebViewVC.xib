@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewVC" customModule="Example" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicatorView" destination="nPL-bk-EhU" id="uDn-3X-XRf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="webView" destination="2in-Oy-tAY" id="iia-fg-rtz"/>
             </connections>
@@ -48,16 +49,25 @@
                                 <wkPreferences key="preferences"/>
                             </wkWebViewConfiguration>
                         </wkWebView>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="nPL-bk-EhU">
+                            <rect key="frame" x="162.5" y="308.5" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="YNV-GZ-oLO"/>
+                                <constraint firstAttribute="height" constant="50" id="uDe-sv-dZR"/>
+                            </constraints>
+                        </activityIndicatorView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="2in-Oy-tAY" secondAttribute="bottom" id="6dG-7j-Ha3"/>
                         <constraint firstItem="2in-Oy-tAY" firstAttribute="leading" secondItem="q6i-GE-Ls8" secondAttribute="leading" id="6tU-W6-CNo"/>
+                        <constraint firstItem="nPL-bk-EhU" firstAttribute="centerX" secondItem="q6i-GE-Ls8" secondAttribute="centerX" id="7AM-VT-J06"/>
                         <constraint firstAttribute="trailing" secondItem="iKq-XJ-saZ" secondAttribute="trailing" id="BBl-uo-jCp"/>
                         <constraint firstAttribute="trailing" secondItem="2in-Oy-tAY" secondAttribute="trailing" id="aP6-ZF-vcT"/>
                         <constraint firstItem="2in-Oy-tAY" firstAttribute="top" secondItem="iKq-XJ-saZ" secondAttribute="bottom" id="bND-rz-GeS"/>
                         <constraint firstItem="iKq-XJ-saZ" firstAttribute="leading" secondItem="q6i-GE-Ls8" secondAttribute="leading" id="c33-WI-6tt"/>
                         <constraint firstItem="iKq-XJ-saZ" firstAttribute="top" secondItem="q6i-GE-Ls8" secondAttribute="top" id="kRu-Si-7ew"/>
+                        <constraint firstItem="nPL-bk-EhU" firstAttribute="centerY" secondItem="q6i-GE-Ls8" secondAttribute="centerY" id="pZp-Og-Qhu"/>
                     </constraints>
                 </view>
             </subviews>
